@@ -1,0 +1,9 @@
+
+$color-red:#a66;
+p {
+  color :$color-red;
+}
+.p2 {
+  @extend p;
+  font-size: 20px;
+}

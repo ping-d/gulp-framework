@@ -1,0 +1,77 @@
+//highlight
+$highlight-color:#E60013;
+
+$border-color:#eee;
+
+$deep-font-color:#333;
+
+$light-font-color:#888;
+
+$lighter-font-color:#ccc;
+
+
+$foot-bg:#252427;
+$light-bg:#f7f7f7;
+
+$baseFontSize: 64;
+@function pxToRem($px) {
+  @return ($px / $baseFontSize) * 1rem;
+}
+
+@mixin border-radius($radius:5px){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin element-transition($timer:0.5s){
+  -webkit-transition:all $timer ease;
+  -moz-transition:all $timer ease;
+  -o-transition:all $timer ease;
+  -ms-transition:all $timer ease;
+  transition:all $timer ease;
+}
+@mixin box-shadow($x,$y,$size,$color,$inset){
+  -webkit-box-shadow:$x $y $size $color $inset;
+  -moz-box-shadow:$x $y $size $color $inset;
+  -o-box-shadow:$x $y $size $color $inset;
+  -ms-box-shadow:$x $y $size $color $inset;
+  box-shadow:$x $y $size $color $inset;
+}
+@mixin box-shadow-outset($x,$y,$size,$area,$color){
+  -webkit-box-shadow:$x $y $size $area $color;
+  -moz-box-shadow:$x $y $size $area $color;
+  -o-box-shadow:$x $y $size $area $color;
+  -ms-box-shadow:$x $y $size $area $color;
+  box-shadow:$x $y $size $area $color;
+}
+@mixin box-sizing(){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin ellips($line:1){
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+/* 30px字体大小*/
+$official-30-font-size: 18px;
+/* 26px字体大小*/
+$official-26-font-size: 17px;
+/* 24px字体大小*/
+$official-24-font-size: 16px;
+/* 22px字体大小*/
+$official-22-font-size: 15px;
+/* 默认字体大小*/
+$official-normal-font-size: 14px;
+$official-color-title: #333;
+$official-color-normal: #666;
+$official-normal-background: #ebebeb;
+
